@@ -1,1 +1,1 @@
-notice("Homedir for 'bob' is #{homedir('bob')}.")
+notice("Homedir for 'bob' is ${homedir('bob')}.")
