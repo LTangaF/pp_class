@@ -28,5 +28,8 @@ node default {
   # Example:
   #   class { 'my_class': }
   notify { "Hello ${fqdn}": }
+}
+
+node 'joel.puppetlabs.vm' {
   notify { "This is the machine for ${hiera('message')}": }
 }
