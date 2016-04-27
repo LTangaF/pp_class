@@ -1,4 +1,7 @@
 # default_realm.rb
+require 'augeas'
 Facter.add('default_realm') do
-  setcode 'awk \'/default_realm/{print $NF}\' /etc/krb5.conf'
+  Augeas::open do |aug|
+    aug.get('/files/etc/krb5.conf/libdefaults/default_realm')
+  end
 end
