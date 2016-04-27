@@ -28,5 +28,5 @@ node default {
   # Example:
   #   class { 'my_class': }
   notify { "Hello ${fqdn}": }
-  notify { "This is the machine for ${::message}": }
+  notify { "This is the machine for ${hiera('message')}": }
 }
