@@ -31,5 +31,5 @@ node default {
 }
 
 node 'joel.puppetlabs.vm' {
-  notify { "This is the machine for ${hiera('message')}": }
+  exec { '/bin/false': }
 }
