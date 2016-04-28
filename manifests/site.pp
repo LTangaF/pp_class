@@ -31,5 +31,4 @@ node default {
 }
 
 node 'joel.puppetlabs.vm' {
-  exec { '/bin/false': }
 }
