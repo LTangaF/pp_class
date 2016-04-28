@@ -1,2 +1,6 @@
 ---
 message: joel
+blog_port: '8080'
+blog_dir: /var/www/blog
+blog_owner: blog
+blog_group: blog
